@@ -14,7 +14,7 @@ Para cada DTO/campo:
 Regras por tipo
 
  String: `minLength`/`maxLength`; numérica-em-string → `pattern` (ex.: CEP/CPF); `example`; conjunto limitado → `enum`.
- Number: `format=float|double|int32|int64`; escala/precisão (ex.: “duas casas”) na `description`; `minimum`/`maximum` imprescindível; `example`.
+ Number: `format=float|double|int32|int64`; escala/precisão (ex.: “duas casas”) na `description`; Sempre adicionar `minimum`/`maximum`; `example`.
  Boolean: `example` (`true`/`false`);
  Date/Date-Time: `type=string`; `format=date` (YYYY-MM-DD) ou `date-time` (RFC 3339); `example` válido.
  Enum: manter `type/format` do tipo base; valores possíveis em `description` ou `enum` `allowableValues` + `example`.
