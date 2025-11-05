@@ -4,6 +4,7 @@ Para cada DTO e campo:
 - Completar documentação: type, format, minLength, maxLength, pattern, example, nullable, readOnly|writeOnly.
 - Marcar obrigatoriedade: usar requiredMode=REQUIRED|NOT_REQUIRED por campo OU requiredProperties na classe quando aplicável.
 - Diferenciar request/response: readOnly para saída, writeOnly para entrada.
+- Coleções/arrays: Definir minItems/maxItems quando houver regra; se desconhecido, registrar em “Gaps”.
 - Listar uma pequena tabela de “Gaps de informação” (dúvidas) quando algo não puder ser inferido.
 
 CONTEXT
