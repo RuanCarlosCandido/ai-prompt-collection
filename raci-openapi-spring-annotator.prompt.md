@@ -15,10 +15,10 @@ Para cada DTO/campo:
 
 Regras por tipo
 
- String: `type=string`; `minLength`/`maxLength`; numérica-em-string → `pattern` (ex.: CEP/CPF); `example`; conjunto limitado → `enum`.
- Integer: `type=integer`; `format=int32` (≤2.147.483.647) ou `int64`; `minimum`/`maximum`; `example`.
- Number: `type=number`; `format=float|double`; escala/precisão (ex.: “duas casas”) na `description`; `minimum`/`maximum`; `example`.
- Boolean: `type=boolean`; `example` (`true`/`false`); marcar `readOnly`/`writeOnly` conforme uso.
+ String: `minLength`/`maxLength`; numérica-em-string → `pattern` (ex.: CEP/CPF); `example`; conjunto limitado → `enum`.
+ Integer: `format=int32` ou `int64`; `minimum`/`maximum`; `example`.
+ Number: `format=float|double`; escala/precisão (ex.: “duas casas”) na `description`; `minimum`/`maximum`; `example`.
+ Boolean: `example` (`true`/`false`);
  Date/Date-Time: `type=string`; `format=date` (YYYY-MM-DD) ou `date-time` (RFC 3339); `example` válido.
  Enum: manter `type/format` do tipo base; valores possíveis em `description` ou `enum`.
  Arrays/Coleções: `@ArraySchema`; sempre documentar item com `schema=@Schema(...)`; `minItems`/`maxItems`; `example`; coleções sem duplicados (ex.: `Set`) → mencionar na `description`.
